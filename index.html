@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+   <title>Admin Panel</title>
+  </head>
+  <body class="bg-right">
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-md-10 col-11 mx-auto mt-5">
+			<nav aria-label="breadcrumb ">
+				<ol class="breadcrumb bg-comm">
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item"><a href="#">User</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Profile Setting</li>
+				</ol>
+</nav>
+
+	<!right side start>
+						<div class="row">
+							<div class="col-md-3 col-4 d-md-block ">
+								<div class="card card-left ">
+									<div class="card-body">
+									<nav class="nav d-md-block d-none">
+											<a data-toggle='tab' class="nav-link active" href="#profile"><i class="fas fa-user mr-1"></i>Profile</a>
+												<a data-toggle='tab' class="nav-link" href="#account"><i class="fas fa-user-cog mr-1"></i>Account Setting</a>
+											<a data-toggle='tab' class="nav-link" href="#security"><i class="fas fa-user-shield mr-1"></i>Security</a>
+											<a data-toggle='tab' class="nav-link" href="#notification"><i class="fas fa-bell mr-1"></i>Notification</a>
+											<a data-toggle='tab' class="nav-link" href="#billing"><i class="fas fa-money-check mr-1"></i>Billing</a>
+									</nav>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-lg-9 col-md-8"> 
+								<div class="card">
+									<div class="card-header border-bottom mt-3 d-md-none ">
+											<ul class="nav nav-tabs nav-fill card-header-tab ">
+												<li class="nav-item">
+													<a data-toggle='tab' class="nav-link active" href="#profile"><i class="fas fa-user"></i></a>
+												</li>
+												<li class="nav-item">
+													<a data-toggle='tab'  class="nav-link" href="#account"><i class="fas fa-user-cog "></i></a>
+												</li>
+												<li class="nav-item">
+													<a  data-toggle='tab' class="nav-link" href="#security"><i class="fas fa-user-shield "></i></a>
+												</li>
+												<li class="nav-item">
+													<a data-toggle='tab' class="nav-link" href="#notification"><i class="fas fa-bell "></i></a>
+												</li>
+												<li class="nav-item">
+													<a data-toggle='tab' class="nav-link" href="#billing"><i class="fas fa-money-check "></i></a>
+												</li>
+  
+											</ul>
+									</div>
+									<!user profile start">
+										<div class="card-body tab-content border-0">
+											<div class="tab-pane active" id="profile">
+												<h6>Profile Personal Information</h6>
+												<hr>
+												<form>
+													<div class="form-group">
+													<label>Name</label>
+													<input type="text" class="form-control" id="exampleInputfirstname"  placeholder="Enter YourName" >
+  
+													</div>
+													
+														<div class="form-group">
+													<label>Your Bio</label>
+													<input type="text" class="form-control" id="exampleInputfirstname" placeholder="Enter Your Bio" >
+  
+													</div>
+													
+														<div class="form-group">
+													<label>Url</label>
+													<input type="text" class="form-control" id="exampleInputfirstname" placeholder="Enter Your Url" >
+  
+													</div>
+													
+														<div class="form-group">
+													<label >Location</label>
+													<input type="text" class="form-control" id="exampleInputfirstname" placeholder="Enter Your Location" >
+  
+													</div>
+													
+													<div class="form-group form-text text-muted small">
+													All of the fields on this pages are optional and you can delete at any time, and by filling
+													them out ,you're giving us consent to share this data whneaver your user profile appers.
+													</div>
+  
+												<button type="submit" class="btn btn-outline-info">Update Profile</button>
+												<button type="submit" class="btn btn-outline-primary ">Reset Changes</button>
+												</form>
+											</div>
+											
+											
+											<div class="tab-pane" id="account">
+												<h6>Account Setting</h6>
+												<hr>
+												<form>
+												<div class="form-group">
+													<label >UserName</label>
+													<input type="text" class="form-control" id="exampleInputfirstname" placeholder="Enter Your UserName" >
+													</div>
+													<small class="form-text text-muted">After changes your old username ,your old usernamme becomes 
+													available for anyone else to claim</small><br>
+													<div class="form-group">
+													<label class="text-danger">Delete Accoount</label>
+													<p class="text-muted">If you once Delete than there is no more available</p>
+													<button type="button" class="btn btn-danger">Delete Accoount</button>
+													</div>
+												</form>
+											</div>
+											
+											
+											<div class="tab-pane" id="security">
+												<h6>Security Setting</h6>
+												<hr>
+												<form>
+												<div class="form-group">
+													<label >Old Password</label>
+													<input type="password" class="form-control" id="exampleInputfirstname" placeholder="Enter Your Old Password" >
+													</div>
+													<div class="form-group">
+													<label >New Password</label><input type="password" class="form-control" id="exampleInputfirstname" placeholder="Enter Your New Password" >
+													</div>
+													<div class="form-group">
+													<label >Confirm Password</label><input type="password" class="form-control" id="exampleInputfirstname" placeholder="Enter Your Confirm Password" >
+													</div>
+													
+													<div class="form-group">
+													<label >Two Factor Authentication</label><br>
+													<button type="button" class="btn btn-outline-info">Enable to Factor Authentication</button>
+											<p class="text-muted">Two-Factor authentication adds an additional layer of security to your
+											account by requiring more than just a password to log in.</p>
+											<hr>
+													
+													</div>
+												</form>
+											</div>
+											
+											
+											<div class="tab-pane" id="notification">
+												<h6>Notification Setting</h6>
+												<hr>
+												<form>
+												<div class="form-group">
+													<label >Security Alert</label>
+													<p class="text-muted">Receive security alert notification via email</p>
+												<div class="form-check">
+												
+                                               <input class="form-check-input" type="checkbox">
+											   <label class="form-check-label">E-mail each time a vulernability is found</label>
+                                              </div>
+										
+                                             <div class="form-check">
+                                          <input class="form-check-input" type="checkbox">
+											   <label class="form-check-label">E-mail is digest summary of vulernability</label>
+                                             </div>
+											 
+											 <div class="mt-2">
+												<label>SMS Notification</label>
+											 </div>
+											 <hr>
+											 <div class="custom-control custom-switch mb-2">
+											<input type="checkbox" class="custom-control-input" id="customSwitch1">
+												<label class="custom-control-label" for="customSwitch1">Comments</label>
+									
+												 </div><hr>
+												 
+											 <div class="custom-control custom-switch mb-2">
+											<input type="checkbox" class="custom-control-input" id="customSwitch2">
+												<label class="custom-control-label" for="customSwitch2">Update Frome People</label>
+									
+												 </div><hr>
+												 
+											 <div class="custom-control custom-switch mb-2">
+											<input type="checkbox" class="custom-control-input" id="customSwitch3">
+												<label class="custom-control-label" for="customSwitch3">Reminders</label>
+									
+												 </div><hr>
+												 
+											 <div class="custom-control custom-switch mb-2">
+											<input type="checkbox" class="custom-control-input" id="customSwitch4">
+												<label class="custom-control-label" for="customSwitch4">Event</label>
+									
+												 </div><hr>
+												 
+												 <div class="custom-control custom-switch">
+											<input type="checkbox" class="custom-control-input" id="customSwitch5">
+												<label class="custom-control-label" for="customSwitch5">Page You Follow</label>
+									
+												 </div>
+												</form>
+											</div>
+											</div>
+											
+											
+												<div class="tab-pane" id="billing">
+												<h6>Billing</h6>
+												<hr>
+												<div class="mb-2">
+												<label>Payment Method</label>
+												<p class="text-muted small">You have not added a Payment method</p>
+												<button type="button" class="btn btn-outline-info">Add Payment</button>
+												</div>
+												</div>
+										</div>
+								<!user profile end">
+								</div>
+						</div>
+	<!right side end>
+			</div>
+		</div>
+	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
